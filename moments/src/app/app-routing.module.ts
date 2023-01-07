@@ -14,7 +14,7 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path:'new',
+    path:'moments/new',
     component: NewMomentComponent
   }
 ];
