@@ -11,6 +11,11 @@ export class MessagesService {
   add(messagem:string){
     this.message = messagem
 
-    setTimeout()
+    setTimeout(() =>{
+      this.clear()
+    },4000)
+  }
+  clear(){
+    this.message = ''
   }
 }
