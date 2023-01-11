@@ -1,3 +1,4 @@
+import { MomentComponent } from './components/pages/moment/moment.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'moments/new',
     component: NewMomentComponent
+  },
+  {
+    path:'moments/:id',
+    component: MomentComponent
   }
 ];
 

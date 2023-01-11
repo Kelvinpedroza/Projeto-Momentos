@@ -1,0 +1,35 @@
+.moment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.moment img {
+    width: 500px;
+    border-radius: 26px 46px 258px 8px / 32px 10px 102px 10px;
+}
+
+.btn-color-editar {
+    background-color:#dec029ad;
+}
+.btn-color-editar:hover {
+    background-color:#fad20df5;
+}
+
+.btn-color-excluir {
+    background-color: rgba(255, 0, 0, 0.425);
+}
+.btn-color-excluir:hover {
+    background-color: rgba(255, 0, 0, 0.726);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+.about-moment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

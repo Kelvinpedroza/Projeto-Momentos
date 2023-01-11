@@ -4,6 +4,7 @@ import { HttpClientModule} from '@angular/common/http'
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -26,7 +27,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     NewMomentComponent,
     MomentsFormComponent,
-    MessagesComponent
+    MessagesComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

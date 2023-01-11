@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
 
     this.momentService.getMoments().subscribe((items)=>{
       
-      const data = items.date
-    
+      const data = items.data
+      console.log(items)
       
       data.map((item)=>{
         item.created_at = new Date(item.created_at!).toLocaleDateString('pt-BR')
@@ -33,4 +33,13 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  seach(event:Event):void{
+    const target = event.target as HTMLInputElement
+
+    const value = target.value
+
+    this.moments = this.allMoments.filter(moment=>{
+      return moment.title.toLowerCase().includes(value)
+    })
+  }
 }

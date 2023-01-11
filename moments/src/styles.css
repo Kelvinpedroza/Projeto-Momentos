@@ -23,7 +23,7 @@ a:hover{
 form{
     width: 450px;
     margin: 0 auto;
-    background-color: #c9a8051a;
+
 }
 .form-group {
     display: flex;
@@ -64,7 +64,7 @@ input[type=submit]:hover{
     
     color: #dec129;
     border: #dec129;
-    /* background-color: transparent; */
+    background-color: transparent;
 }   
 .validation-error p{
     width: 200px;
