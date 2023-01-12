@@ -13,7 +13,7 @@ export class MomentsFormComponent implements OnInit {
   momentForm!: FormGroup;
   ngOnInit(): void {
     this.momentForm = new FormGroup({
-      id: new FormControl('qual quer coisa que eu quero'),
+      id: new FormControl(''),
       title: new FormControl(
         this.momentData ? this.momentData.title : '',
         Validators.required
@@ -24,6 +24,7 @@ export class MomentsFormComponent implements OnInit {
       ),
       image: new FormControl(''),
     });
+    console.log(this.momentData.title)
   }
   get title() {
     return this.momentForm.get('title')!;
