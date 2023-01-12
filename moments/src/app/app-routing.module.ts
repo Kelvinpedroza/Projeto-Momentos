@@ -1,3 +1,5 @@
+import { CommonModule } from '@angular/common';
+import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.component';
 import { MomentComponent } from './components/pages/moment/moment.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
@@ -21,11 +23,18 @@ const routes: Routes = [
   {
     path:'moments/:id',
     component: MomentComponent
+  },
+  {
+    path:'moments/edit/:id',
+    component: EditMomentComponent
+
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+  CommonModule
+  ,RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

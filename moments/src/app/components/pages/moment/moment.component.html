@@ -1,21 +1,22 @@
-<div class="moment"  >
-    <h1>{{ moment.title }}</h1>
-    <img src="{{ baseApiUrl }}uploads/{{ moment.image }}" alt="{{ moment.title }}">
-    <div class="about-moment">
-        <h3>Sobre este momento</h3>
-        <p>{{ moment.description }}</p>
+<ng-container>
+    <div class="moment"  >
+        <h1>{{ momentTitle }}</h1>
+        <img src="{{ baseApiUrl }}uploads/{{ momentImage }}" alt="{{ momentTitle }}">
+        <div class="about-moment">
+            <h3>Sobre este momento</h3>
+            <p>{{ momentDescription }}</p>
+        </div>
+        <div class="actions">
+            <h3>Ações:</h3>
+            <a  class="btn btn-color-editar" routerLink="/moments/edit/{{momentId}}">Editar</a>
+    
+            <button class="remove btn btn-color-excluir" (click)="removeHandler(moment.id!)" >
+                Excluir
+            </button>
+    
+        </div>
+        Comentarios -->
+    
+        <h3>Comentários (0):</h3>
     </div>
-    <div class="actions">
-        <h3>Ações:</h3>
-        <a href="/moments/edit/{{moment.id}}" class="btn btn-color-editar" >
-        Editar</a>
-
-        <button class="remove btn btn-color-excluir" >
-            Excluir
-        </button>
-
-    </div>
-    <!-- Comentarios -->
-
-    <h3>Comentários (0):</h3>
-</div>
+</ng-container>

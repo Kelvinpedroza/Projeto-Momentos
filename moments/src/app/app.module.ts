@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http'
@@ -17,7 +18,8 @@ import { NewMomentComponent } from './components/pages/new-moment/new-moment.com
 import { MomentsFormComponent } from './components/moments-form/moments-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.component';
+import { MomentComponent } from './components/pages/moment/moment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,16 +30,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NewMomentComponent,
     MomentsFormComponent,
     MessagesComponent,
+    EditMomentComponent,
+    MomentComponent
     
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
